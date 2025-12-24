@@ -1,0 +1,7 @@
+{
+  "name": "Grand Luxury Interactive Christmas Tree",
+  "description": "A high-fidelity 3D interactive Christmas experience featuring a particle-based tree, gesture controls via MediaPipe, and photo uploads.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
