@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Root index.html to prevent overriding dist/index.html
+index.html

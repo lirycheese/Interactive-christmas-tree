@@ -95,8 +95,8 @@ const HandTracker: React.FC = () => {
 
       // Draw lines
       ctx.strokeStyle = '#D4AF37';
-      ctx.lineWidth = 2.5;
-      ctx.setLineDash([5, 5]); // Dotted line style
+      ctx.lineWidth = 5;
+      ctx.setLineDash([]); // Solid line style
       ctx.beginPath();
       
       connections.forEach(([start, end]) => {
@@ -112,7 +112,7 @@ const HandTracker: React.FC = () => {
       ctx.fillStyle = '#D4AF37';
       landmarks.forEach((point) => {
         ctx.beginPath();
-        ctx.arc(point.x * canvas.width, point.y * canvas.height, 4, 0, Math.PI * 2);
+        ctx.arc(point.x * canvas.width, point.y * canvas.height, 7, 0, Math.PI * 2);
         ctx.fill();
         
         // Add a small glow to the point
